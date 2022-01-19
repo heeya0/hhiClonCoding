@@ -1,0 +1,21 @@
+/*--------------------------------------------------
+# 전체
+--------------------------------------------------*/
+.inner {width: 1600px;margin: 0 auto;}
+.wrap {display: flex;flex-flow: row wrap;justify-content: space-between;}
+.content .title::before,
+.content .title::after {content: '';display: inline-block;width: 30px;height: 30px;margin: -5px 15px 0 15px;background: no-repeat center;background-size: cover;}
+.content .title::before {background-image: url('../img/icon/edge_left.png');transform: translateY(-8px);}
+.content .title::after {background-image: url('../img/icon/edge_right.png');}
+@media screen and (max-width:480px) {
+  .content .title::before,
+  .content .title::after {display: none;}
+}
+
+/*--------------------------------------------------
+# 메인
+--------------------------------------------------*/
+#main {padding-top: 121px;}
+@media screen and (max-width:980px) {
+  #main {padding-top: 111px;}
+}
